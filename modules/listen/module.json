@@ -1,0 +1,6 @@
+{
+  "name": "listen",
+  "bundle": "ts",
+  "platforms": "ssr",
+  "files": "*"
+}

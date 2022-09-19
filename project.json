@@ -1,0 +1,35 @@
+{
+  "scope": "beyond-js",
+  "name": "ssr",
+  "version": "0.0.3",
+  "license": "MIT",
+  "modules": {
+    "path": "./modules"
+  },
+  "libraries": {
+    "imports": [
+      "@beyond-js/kernel",
+      "@beyond-js/widgets"
+    ]
+  },
+  "deployment": {
+    "distributions": [
+      {
+        "name": "npm",
+        "npm": {
+          "platforms": {
+            "ssr": "ssr"
+          }
+        }
+      },
+      {
+        "name": "web-tsc",
+        "platform": "ssr",
+        "port": 9999,
+        "ts": {
+          "compiler": "tsc"
+        }
+      }
+    ]
+  }
+}
