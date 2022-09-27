@@ -1,6 +1,8 @@
 import {createServer} from 'http';
 import listener from './listener';
 
+declare const process: any;
+
 export /*bundle*/
 class SSRServer {
     constructor(pkg: string, port: number) {
