@@ -17,9 +17,6 @@
       {
         "name": "npm",
         "maps": "external",
-        "ports": {
-          "bundles": 9113
-        },
         "npm": {
           "platforms": {
             "ssr": "ssr"
@@ -27,7 +24,7 @@
         }
       },
       {
-        "name": "web-tsc",
+        "name": "ssr",
         "platform": "ssr",
         "ports": {
           "bundles": 9114
