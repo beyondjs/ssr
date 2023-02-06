@@ -24,6 +24,16 @@
         "ts": {
           "compiler": "tsc"
         }
+      },
+      {
+        "name": "node",
+        "platform": "node",
+        "ports": {
+          "bundles": 9115
+        },
+        "ts": {
+          "compiler": "tsc"
+        }
       }
     ]
   },
