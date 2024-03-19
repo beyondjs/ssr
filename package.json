@@ -1,47 +1,41 @@
 {
-  "name": "@beyond-js/ssr",
-  "version": "1.1.0",
-  "description": "It allows to implement SSR solutions in web projects with beyondJS",
-  "license": "MIT",
-  "modules": {
-    "path": "./modules"
-  },
-  "libraries": {
-    "imports": [
-      "@beyond-js/kernel",
-      "@beyond-js/widgets"
-    ]
-  },
-  "deployment": {
-    "distributions": [
-      {
-        "name": "ssr",
-        "platform": "ssr",
-        "ports": {
-          "bundles": 9114
-        },
-        "ts": {
-          "compiler": "tsc"
-        }
-      },
-      {
-        "name": "node",
-        "platform": "node",
-        "ports": {
-          "bundles": 9115
-        },
-        "ts": {
-          "compiler": "tsc"
-        }
-      }
-    ]
-  },
-  "dependencies": {
-    "cheerio": "^1.0.0-rc.12",
-    "@beyond-js/kernel": "~0.1.8",
-    "@beyond-js/widgets": "~1.1.0"
-  },
-  "devDependencies": {
-    "@types/node": "^18.11.17"
-  }
+	"name": "@beyond-js/ssr",
+	"version": "1.1.0",
+	"description": "It allows to implement SSR solutions in web projects with beyondJS",
+	"license": "MIT",
+	"modules": {
+		"path": "./modules"
+	},
+	"deployment": {
+		"distributions": [
+			{
+				"name": "ssr",
+				"platform": "ssr",
+				"ports": {
+					"bundles": 9114
+				},
+				"ts": {
+					"compiler": "tsc"
+				}
+			},
+			{
+				"name": "node",
+				"platform": "node",
+				"ports": {
+					"bundles": 9115
+				},
+				"ts": {
+					"compiler": "tsc"
+				}
+			}
+		]
+	},
+	"dependencies": {
+		"cheerio": "^1.0.0-rc.12",
+		"@beyond-js/kernel": "~0.1.8",
+		"@beyond-js/widgets": "~1.1.0"
+	},
+	"devDependencies": {
+		"@types/node": "^18.11.17"
+	}
 }
