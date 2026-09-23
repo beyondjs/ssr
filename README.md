@@ -9,3 +9,5 @@ The public Beyond modules are `@beyond-js/ssr/server` (`SSRServer`) and `@beyond
 Read [architecture, endpoints and integration](docs/architecture.md) before starting the service. The guide explains rendering flow, store responsibilities, client compatibility, setup prerequisites and known failure/lifecycle limitations. `/page` and `/widget` contain rendering implementations; `/store` is a placeholder. Server readiness and shutdown are incomplete.
 
 [package.json](package.json) declares Kernel, Cheerio and Widgets compatibility ranges and source distributions. There is no root start/build/test script, test suite or standalone Node entrypoint in this checkout. Installing the package alone does not configure SSR for an application.
+
+[Testing](docs/testing.md) states that no validation exercises this service and where its required cases are listed.
